@@ -75,14 +75,14 @@ This Template is as ASP.NET Framework web project integrating Umbraco CMS 7.14.0
 
 The architectural overview of the template is resumed as per the following image:
 
-!["Clean Core Architecture"](Assets/Clean.Core.Architecture.PNG)  
+!["Clean Core Architecture"](Assets/Clean.Core.Architecture.png)  
 *Fig. 4: Clean Core Project Architecture*
 
 ### 4.2. Hexago .NET
 
 The architectural overview of the template is resumed as per the following image:
 
-!["Hexago .Net Architecture"](Assets/Hexago.Net.Architecture.PNG)  
+!["Hexago .Net Architecture"](Assets/Hexago.Net.Architecture.png)  
 *Fig. 5: Hexago .Net Project Architecture*
 
 ### 4.3. Swift Umbraco
