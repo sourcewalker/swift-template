@@ -1,0 +1,39 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Site.Tests</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Site.Tests</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Site.Tests.csproj" File="Site.Tests.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <Folder Name="Api" TargetFolderName="Api">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationControllerTests.cs">ParticipationControllerTests.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Render" TargetFolderName="Render">
+          <ProjectItem ReplaceParameters="true" TargetFileName="HomepageControllerTests.cs">HomepageControllerTests.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationFlowControllerTests.cs">ParticipationFlowControllerTests.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Surface" TargetFolderName="Surface">
+          <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinControllerTests.cs">InstantWinControllerTests.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,50 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Swift.Umbraco.Tests.Unit.Infrastructure.FeaturesTests</Name>
+    <Description>Infrastructure features Unit test project of the solution</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Swift.Umbraco.Tests.Unit.Infrastructure.FeaturesTests</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Infrastructure.FeaturesTests.csproj" File="Infrastructure.FeaturesTests.csproj" ReplaceParameters="true">
+      <Folder Name="Captcha" TargetFolderName="Captcha">
+        <Folder Name="Helper" TargetFolderName="Helper">
+          <ProjectItem ReplaceParameters="true" TargetFileName="GoogleRecaptchaHelperTests.cs">GoogleRecaptchaHelperTests.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Provider" TargetFolderName="Provider">
+          <ProjectItem ReplaceParameters="true" TargetFileName="CaptchaProviderTests.cs">CaptchaProviderTests.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Hangfire" TargetFolderName="Hangfire">
+        <ProjectItem ReplaceParameters="true" TargetFileName="HangfireProviderTests.cs">HangfireProviderTests.cs</ProjectItem>
+      </Folder>
+      <Folder Name="InstantWin" TargetFolderName="InstantWin">
+        <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinProviderTests.cs">InstantWinProviderTests.cs</ProjectItem>
+      </Folder>
+      <Folder Name="LogoGrab" TargetFolderName="LogoGrab">
+        <Folder Name="Provider" TargetFolderName="Provider">
+          <ProjectItem ReplaceParameters="true" TargetFileName="LogoGrabProviderTests.cs">LogoGrabProviderTests.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="ProCampaign" TargetFolderName="ProCampaign">
+        <Folder Name="Provider" TargetFolderName="Provider">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ConsumerProviderTests.cs">ConsumerProviderTests.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

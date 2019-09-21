@@ -1,0 +1,44 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Swift.Umbraco.Sources.Infrastructure.DAL</Name>
+    <Description>Data Access Layer of the solution</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Swift.Umbraco.Sources.Infrastructure.DAL</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="DAL.csproj" File="DAL.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <Folder Name="Managers" TargetFolderName="Managers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConsumerManager.cs">ConsumerManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CountryManager.cs">CountryManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransactionManager.cs">FailedTransactionManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinMomentManager.cs">InstantWinMomentManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipantManager.cs">ParticipantManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationManager.cs">ParticipationManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PrizeManager.cs">PrizeManager.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Petapoco" TargetFolderName="Petapoco">
+        <ProjectItem ReplaceParameters="true" TargetFileName="GenericManager.cs">GenericManager.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Umbraco" TargetFolderName="Umbraco">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ContentServiceManager.cs">ContentServiceManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MediaServiceManager.cs">MediaServiceManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PublishedContentManager.cs">PublishedContentManager.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

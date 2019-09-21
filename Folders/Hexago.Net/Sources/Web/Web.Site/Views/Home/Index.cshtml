@@ -1,0 +1,15 @@
+﻿@using $safeprojectname$.Services.Models
+@{
+    ViewBag.Title = "Home";
+    ViewBag.BodyClass = "home";
+    ViewBag.AssetName = "home";
+
+    var captchaSiteKey = (string)ViewBag.CaptchaSiteKey;
+    var privacyNoticeUrl = (string)ViewBag.PrivacyNoticeUrl;
+}
+
+Homepage
+
+@section libraryScripts{
+     @*page specific script goes here*@
+}

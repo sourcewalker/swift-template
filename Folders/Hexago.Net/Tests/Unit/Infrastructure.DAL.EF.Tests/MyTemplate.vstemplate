@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Infrastructure.DAL.EF.Tests</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Infrastructure.DAL.EF.Tests</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Infrastructure.DAL.EF.Tests.csproj" File="Infrastructure.DAL.EF.Tests.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Repository" TargetFolderName="Repository">
+        <Folder Name="Implementations" TargetFolderName="Implementations">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ChocolateBarRepositoryTests.cs">ChocolateBarRepositoryTests.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransactionRepositoryTests.cs">FailedTransactionRepositoryTests.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RetailerRepositoryTests.cs">RetailerRepositoryTests.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SiteRepositoryTests.cs">SiteRepositoryTests.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="VoteRepositoryTests.cs">VoteRepositoryTests.cs</ProjectItem>
+        </Folder>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

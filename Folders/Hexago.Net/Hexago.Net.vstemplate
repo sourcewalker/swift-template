@@ -1,0 +1,140 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Hexago .NET by PBIO</Name>
+        <Description>A .Net Framework web project monolith template using hexagonal architecture by Proximity Indian Ocean. Involving ASP.NET MVC, Web API, Angular, Entity Framework, Hangfire, AutoMapper...</Description>
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>1000</SortOrder>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>Hexago.Net</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <Icon>__TemplateIcon.png</Icon>
+        <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <SolutionFolder Name="Source">
+                <SolutionFolder Name="Admin">
+                    <ProjectTemplateLink ProjectName="Admin.Dashboard">
+                        Sources\Admin\Admin.Dashboard\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Admin.Service">
+                        Sources\Admin\Admin.Service\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+                <SolutionFolder Name="Core">
+                    <ProjectTemplateLink ProjectName="Core.Infrastructure.Interfaces">
+                        Sources\Core\Core.Infrastructure.Interfaces\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Core.Model">
+                        Sources\Core\Core.Model\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Core.Service">
+                        Sources\Core\Core.Service\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Core.Service.Interfaces">
+                        Sources\Core\Core.Service.Interfaces\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Core.Shared">
+                        Sources\Core\Core.Shared\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+                <SolutionFolder Name="Infrastructure">
+                    <ProjectTemplateLink ProjectName="Infrastructure.AutoMapper">
+                        Sources\Infrastructure\Infrastructure.AutoMapper\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.Captcha">
+                        Sources\Infrastructure\Infrastructure.Captcha\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.Community">
+                        Sources\Infrastructure\Infrastructure.Community\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.DAL.EF">
+                        Sources\Infrastructure\Infrastructure.DAL.EF\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.Elmah">
+                        Sources\Infrastructure\Infrastructure.Elmah\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.Hangfire">
+                        Sources\Infrastructure\Infrastructure.Hangfire\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.InstantWin">
+                        Sources\Infrastructure\Infrastructure.InstantWin\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.ProCampaign">
+                        Sources\Infrastructure\Infrastructure.ProCampaign\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.RunTimeCache">
+                        Sources\Infrastructure\Infrastructure.RunTimeCache\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+                <SolutionFolder Name="Web">
+                    <ProjectTemplateLink ProjectName="Web.Configuration">
+                        Sources\Web\Web.Configuration\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Web.Resources">
+                        Sources\Web\Web.Resources\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Web.Service">
+                        Sources\Web\Web.Service\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Web.Site">
+                        Sources\Web\Web.Site\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+            </SolutionFolder>
+            <SolutionFolder Name="Test">
+                <SolutionFolder Name="Functional">
+                </SolutionFolder>
+                <SolutionFolder Name="Integration">
+                </SolutionFolder>
+                <SolutionFolder Name="Unit">
+                    <ProjectTemplateLink ProjectName="Admin.Service.Tests">
+                        Tests\Unit\Admin.Service.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Core.Service.Tests">
+                        Tests\Unit\Core.Service.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Core.Shared.Tests">
+                        Tests\Unit\Core.Shared.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.AutoMapper.Tests">
+                        Tests\Unit\Infrastructure.AutoMapper.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.Captcha.Tests">
+                        Tests\Unit\Infrastructure.Captcha.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.Community.Tests">
+                        Tests\Unit\Infrastructure.Community.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.DAL.EF.Tests">
+                        Tests\Unit\Infrastructure.DAL.EF.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.Elmah.Tests">
+                        Tests\Unit\Infrastructure.Elmah.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.Hangfire.Tests">
+                        Tests\Unit\Infrastructure.Hangfire.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.InstantWin.Tests">
+                        Tests\Unit\Infrastructure.InstantWin.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.ProCampaign.Tests">
+                        Tests\Unit\Infrastructure.ProCampaign.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Infrastructure.RuntimeCache.Tests">
+                        Tests\Unit\Infrastructure.RuntimeCache.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Web.Service.Tests">
+                        Tests\Unit\Web.Service.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Web.Site.Tests">
+                        Tests\Unit\Web.Site.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+            </SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>

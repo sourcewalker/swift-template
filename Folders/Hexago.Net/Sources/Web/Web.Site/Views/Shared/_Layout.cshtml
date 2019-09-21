@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @{Html.RenderPartial("Navigation/_Meta", (string)ViewBag.Title);}
+    @Html.Partial("Navigation/_HeadScript")
+    @Html.Partial("Navigation/_HeadStyle")
+</head>
+<body class="@ViewBag.BodyClass">
+    @Html.Partial("Navigation/_BodyScriptTop")
+    @{Html.RenderAction("Header", "Navigation");}
+    <main class="wrapper page-border" id="main">
+        @RenderBody()
+    </main>
+    @{Html.RenderAction("Footer", "Navigation");}
+    @Html.Partial("Components/_Cookie")
+    @Html.Partial("Navigation/_FootScript")
+    @RenderSection("libraryScripts", false)
+</body>
+</html>

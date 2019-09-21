@@ -1,0 +1,143 @@
+﻿<h3>Instant Win Moment generation in database</h3>
+<h4>This section contains the tools for generating instant win slots</h4>
+<p>Please note that the generated slots are inserted directly into the database.</p>
+<div class="umb-editor umb-mediapicker span12"
+     ng-controller="generator.controller"
+     ng-init="init()"
+     style="padding-bottom:25px;">
+    <form role="form" class="well well-lg">
+        <h3>Generator</h3>
+        <p>
+            These configuration concern the instant win moments generation <br/>
+            (All entered dates and times should be on UTC timezone)
+        </p>
+        <hr />
+        <div class="row">
+            <div class="form-group span5 col-lg-4 col-md-6 col-xs-12">
+                <div class="row">
+                    <label for="limitoption" class="span4"> Limit Options </label>
+                    <select name="limitoption"
+                            id="limitoption"
+                            class="form-control span8"
+                            placeholder="Enter Name "
+                            ng-model="model.limitoption"
+                            required>
+                        <option ng-repeat="optionText in limitOptions"
+                                value="{{optionText}}">
+                            {{optionText}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="span2"></div>
+            <div class="form-group span5 col-lg-4 col-md-6 col-xs-12">
+                <div class="row">
+                    <label for="limitnumber" class="span4"> Limit Number </label>
+                    <input type="number"
+                           id="limitnumber"
+                           name="limitnumber"
+                           class="form-control span8"
+                           placeholder="Limit number by option"
+                           ng-model="model.limitnumber"
+                           required />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group span5 col-lg-3 col-md-6 col-xs-12">
+                <div class="row">
+                    <label for="startdate" class="span4"> Start Date </label>
+                    <input type="datetime-local"
+                           id="startdate"
+                           name="startdate"
+                           class="span8"
+                           ng-model="model.startdate"
+                           placeholder="yyyy-MM-ddTHH:mm:ss"
+                           min="2001-01-01T00:00:00"
+                           max="2100-12-31T23:59:59"
+                           required />
+                </div>
+            </div>
+            <div class="span2"></div>
+            <div class="form-group span5 col-lg-3 col-md-6 col-xs-12">
+                <div class="row">
+                    <label for="enddate" class="span4"> End Date </label>
+                    <input type="datetime-local"
+                           id="enddate"
+                           name="enddate"
+                           class="span8"
+                           ng-model="model.enddate"
+                           placeholder="yyyy-MM-ddTHH:mm:ss"
+                           min="2001-01-01T00:00:00"
+                           max="2100-12-31T23:59:59"
+                           required />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group span5 col-lg-3 col-md-6 col-xs-12">
+                <div class="row">
+                    <label for="openhour" class="span4"> Opening Time </label>
+                    <input type="time"
+                           id="openhour"
+                           name="openhour"
+                           class="span8"
+                           ng-model="model.openhour"
+                           placeholder="HH:mm:ss"
+                           min="00:00:00"
+                           max="23:59:59"
+                           required />
+                </div>
+            </div>
+            <div class="span2"></div>
+            <div class="form-group span5 col-lg-3 col-md-6 col-xs-12">
+                <div class="row">
+                    <label for="closinghour" class="span4"> Closing Time </label>
+                    <input type="time"
+                           id="closinghour"
+                           name="closinghour"
+                           class="span8"
+                           ng-model="model.closinghour"
+                           placeholder="HH:mm:ss"
+                           min="00:00:00"
+                           max="23:59:59"
+                           required />
+                </div>
+            </div>
+        </div>
+
+        <h3 style="padding-top:15px;">Allocator</h3>
+        <p>
+            These configuration concern the instant win moments allocation numbers <br/>
+            (should match the previous generated number limit)
+        </p>
+        <hr />
+        <div class="row" style="margin-bottom:35px">
+            <div class="form-group span4 col-lg-4 col-md-6 col-xs-12" ng-repeat="allocable in allocables">
+                <div class="row">
+                    <div class="span2"></div>
+                    <label for="prize-{{allocable.Id}}" class="span3">{{ allocable.Name }}</label>
+                    <input type="number"
+                           id="prize-{{allocable.Id}}"
+                           name="prize-{{allocable.Id}}"
+                           class="form-control span7"
+                           placeholder="Number of {{allocable.Name}} to generate"
+                           ng-model="allocableNumber[$index]">
+                </div>
+            </div>
+        </div>
+        <div class="span12">
+            <button type="button"
+                    class="btn btn-success"
+                    ng-click="generate()">
+                {{ generateDatabaseLabel }}
+            </button>
+            <!--<button type="button"
+                    class="btn btn-success"
+                    ng-click="save()">
+                {{ generateFileLabel }}
+            </button>-->
+        </div>
+    </form>
+</div>
+

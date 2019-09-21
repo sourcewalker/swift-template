@@ -1,0 +1,61 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Swift.Umbraco.Sources.Core.Business</Name>
+    <Description>Business project of the solution</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Swift.Umbraco.Sources.Core.Business</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Business.csproj" File="Business.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationService.cs">ConfigurationService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Helper" TargetFolderName="Helper">
+        <ProjectItem ReplaceParameters="true" TargetFileName="PublishedContentExtensions.cs">PublishedContentExtensions.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Journey" TargetFolderName="Journey">
+        <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinService.cs">InstantWinService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationService.cs">ParticipationService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SynchronizationService.cs">SynchronizationService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Manager.Interfaces" TargetFolderName="Manager.Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IConsumerManager.cs">IConsumerManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IContentServiceManager.cs">IContentServiceManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICountryManager.cs">ICountryManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IFailedTransactionManager.cs">IFailedTransactionManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IGenericManager.cs">IGenericManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IInstantWinMomentManager.cs">IInstantWinMomentManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IMediaServiceManager.cs">IMediaServiceManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IParticipantManager.cs">IParticipantManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IParticipationManager.cs">IParticipationManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IPrizeManager.cs">IPrizeManager.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IPublishedContentManager.cs">IPublishedContentManager.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Service.Interfaces" TargetFolderName="Service.Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IConfigurationService.cs">IConfigurationService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IInstantWinService.cs">IInstantWinService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IParticipationService.cs">IParticipationService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISynchronizationService.cs">ISynchronizationService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IValidationService.cs">IValidationService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Validation" TargetFolderName="Validation">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValidationService.cs">ValidationService.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

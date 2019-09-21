@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Core.Service.Interfaces</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Core.Service.Interfaces</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Core.Service.Interfaces.csproj" File="Core.Service.Interfaces.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="IFailedTransactionService.cs">IFailedTransactionService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IInstantWinService.cs">IInstantWinService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IJourneyService.cs">IJourneyService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ILegalService.cs">ILegalService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IParticipantService.cs">IParticipantService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IParticipationService.cs">IParticipationService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ISiteService.cs">ISiteService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ISurveyService.cs">ISurveyService.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="IValidationService.cs">IValidationService.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,6 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = null;
+    umbraco.library.ChangeContentType("text/plain");
+}
+@(Model.Content.GetPropertyValue<string>("fileContent"))

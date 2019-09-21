@@ -1,0 +1,28 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Core.Model</Name>
+    <Description>Core Domain Model</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Core.Model</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Core.Model.csproj" File="Core.Model.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="EntityBase.cs">EntityBase.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransaction.cs">FailedTransaction.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Participant.cs">Participant.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Participation.cs">Participation.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Site.cs">Site.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

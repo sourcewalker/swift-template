@@ -1,0 +1,33 @@
+﻿@model string
+@{
+    var titleString = string.Format((string)TempData["Meta_Title"], !string.IsNullOrEmpty(Model) ? " - " + Model : string.Empty);
+    var applicationName = "{{Application name}}";
+}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="@TempData["Meta_Description"]">
+<meta name="keywords" content="@TempData["Meta_Keywords"]">
+<meta name="author" content="Proximity">
+<meta name="copyright" content="Mondelez 2019">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="@applicationName">
+<meta name="theme-color" content="#513c79">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="@applicationName">
+<meta name="google-site-verification" content="@TempData["Google_SV"]">
+<meta property="fb:app_id" content="@TempData["FBShare_AppId"]" />
+<meta property="og:image:alt" content="@TempData["FBShare_Image_Alt"]" />
+<meta property="og:site_name" content="@TempData["FBShare_Site_Name"]" />
+<meta property="og:title" content="@titleString">
+<meta property="og:url" content="@TempData["host_Name"]">
+<meta property="og:type" content="website">
+<meta property="og:description" content="@TempData["Meta_Description"]">
+<meta property="og:image" content="@TempData["host_Name"]/resources/images/meta-image.jpg">
+<link rel="icon" type="image/png" href="~/resources/images/favicon.png">
+<link rel="shortcut icon" type="image/png" href="~/resources/images/favicon.png">
+<title>@titleString</title>

@@ -1,0 +1,110 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Swift.Umbraco.Sources.Infrastructure.Features</Name>
+    <Description>Other infrastructure project of the solution</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Swift.Umbraco.Sources.Infrastructure.Features</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Features.csproj" File="Features.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <Folder Name="Captcha" TargetFolderName="Captcha">
+        <Folder Name="Helper" TargetFolderName="Helper">
+          <ProjectItem ReplaceParameters="true" TargetFileName="GoogleRecaptchaHelper.cs">GoogleRecaptchaHelper.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Provider" TargetFolderName="Provider">
+          <ProjectItem ReplaceParameters="true" TargetFileName="CaptchaProvider.cs">CaptchaProvider.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Hangfire" TargetFolderName="Hangfire">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CrmResponse.cs">CrmResponse.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CronEnum.cs">CronEnum.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HangfireProvider.cs">HangfireProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="InstantWin" TargetFolderName="InstantWin">
+        <Folder Name="Allocator" TargetFolderName="Allocator">
+          <Folder Name="Algorithms" TargetFolderName="Algorithms">
+            <ProjectItem ReplaceParameters="true" TargetFileName="BlindAlgorithm.cs">BlindAlgorithm.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="FairAlgorithm.cs">FairAlgorithm.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="WeightedAlgorithm.cs">WeightedAlgorithm.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Factory" TargetFolderName="Factory">
+            <ProjectItem ReplaceParameters="true" TargetFileName="AllocatorFactory.cs">AllocatorFactory.cs</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Enum" TargetFolderName="Enum">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AllocatorAlgorithms.cs">AllocatorAlgorithms.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="GeneratorAlgorithms.cs">GeneratorAlgorithms.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Generator" TargetFolderName="Generator">
+          <Folder Name="Algorithms" TargetFolderName="Algorithms">
+            <ProjectItem ReplaceParameters="true" TargetFileName="DivideAndConquerAlgorithm.cs">DivideAndConquerAlgorithm.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Factory" TargetFolderName="Factory">
+            <ProjectItem ReplaceParameters="true" TargetFileName="GeneratorFactory.cs">GeneratorFactory.cs</ProjectItem>
+          </Folder>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinProvider.cs">InstantWinProvider.cs</ProjectItem>
+        <Folder Name="Interfaces" TargetFolderName="Interfaces">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IAllocator.cs">IAllocator.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IGenerator.cs">IGenerator.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProviderConfiguration.cs">ProviderConfiguration.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IConsumerProvider.cs">IConsumerProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IFormValidatorProvider.cs">IFormValidatorProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IInstantWinMomentProvider.cs">IInstantWinMomentProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ILogoValidatorProvider.cs">ILogoValidatorProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISchedulerProvider.cs">ISchedulerProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="LogoGrab" TargetFolderName="LogoGrab">
+        <Folder Name="Helper" TargetFolderName="Helper">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ServiceHelper.cs">ServiceHelper.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Models" TargetFolderName="Models">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Data.cs">Data.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Detection.cs">Detection.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LogoGrabResponse.cs">LogoGrabResponse.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LogoGrabSettings.cs">LogoGrabSettings.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ProcessTime.cs">ProcessTime.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Provider" TargetFolderName="Provider">
+          <ProjectItem ReplaceParameters="true" TargetFileName="LogoGrabProvider.cs">LogoGrabProvider.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="ProCampaign" TargetFolderName="ProCampaign">
+        <Folder Name="Constants" TargetFolderName="Constants">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ProCampaignConstants.cs">ProCampaignConstants.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Helper" TargetFolderName="Helper">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ApiHelper.cs">ApiHelper.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="StringHelper.cs">StringHelper.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Models" TargetFolderName="Models">
+          <ProjectItem ReplaceParameters="true" TargetFileName="CrmData.cs">CrmData.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ProCampaignData.cs">ProCampaignData.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ProCampaignResponse.cs">ProCampaignResponse.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ProCampaignSettings.cs">ProCampaignSettings.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Provider" TargetFolderName="Provider">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ConsumerProvider.cs">ConsumerProvider.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

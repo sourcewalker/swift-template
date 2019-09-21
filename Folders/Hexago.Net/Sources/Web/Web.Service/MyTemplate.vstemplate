@@ -1,0 +1,151 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Web.Service</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Web.Service</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Web.Service.csproj" File="Web.Service.csproj" ReplaceParameters="true">
+      <Folder Name="App_Start" TargetFolderName="App_Start">
+        <ProjectItem ReplaceParameters="true" TargetFileName="FilterConfig.cs">FilterConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InjectionConfig.cs">InjectionConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MappingConfig.cs">MappingConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RouteConfig.cs">RouteConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SwaggerConfig.cs">SwaggerConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WebApiConfig.cs">WebApiConfig.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Areas" TargetFolderName="Areas">
+        <Folder Name="HelpPage" TargetFolderName="HelpPage">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ApiDescriptionExtensions.cs">ApiDescriptionExtensions.cs</ProjectItem>
+          <Folder Name="App_Start" TargetFolderName="App_Start">
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageConfig.cs">HelpPageConfig.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Controllers" TargetFolderName="Controllers">
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpController.cs">HelpController.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="HelpPage.css">HelpPage.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageAreaRegistration.cs">HelpPageAreaRegistration.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageConfigurationExtensions.cs">HelpPageConfigurationExtensions.cs</ProjectItem>
+          <Folder Name="ModelDescriptions" TargetFolderName="ModelDescriptions">
+            <ProjectItem ReplaceParameters="true" TargetFileName="CollectionModelDescription.cs">CollectionModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ComplexTypeModelDescription.cs">ComplexTypeModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="DictionaryModelDescription.cs">DictionaryModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="EnumTypeModelDescription.cs">EnumTypeModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="EnumValueDescription.cs">EnumValueDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="IModelDocumentationProvider.cs">IModelDocumentationProvider.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="KeyValuePairModelDescription.cs">KeyValuePairModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModelDescription.cs">ModelDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModelDescriptionGenerator.cs">ModelDescriptionGenerator.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModelNameAttribute.cs">ModelNameAttribute.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModelNameHelper.cs">ModelNameHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ParameterAnnotation.cs">ParameterAnnotation.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ParameterDescription.cs">ParameterDescription.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="SimpleTypeModelDescription.cs">SimpleTypeModelDescription.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Models" TargetFolderName="Models">
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageApiModel.cs">HelpPageApiModel.cs</ProjectItem>
+          </Folder>
+          <Folder Name="SampleGeneration" TargetFolderName="SampleGeneration">
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageSampleGenerator.cs">HelpPageSampleGenerator.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageSampleKey.cs">HelpPageSampleKey.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ImageSample.cs">ImageSample.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="InvalidSample.cs">InvalidSample.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ObjectGenerator.cs">ObjectGenerator.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="SampleDirection.cs">SampleDirection.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="TextSample.cs">TextSample.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Views" TargetFolderName="Views">
+            <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+            <Folder Name="Help" TargetFolderName="Help">
+              <ProjectItem ReplaceParameters="true" TargetFileName="Api.cshtml">Api.cshtml</ProjectItem>
+              <Folder Name="DisplayTemplates" TargetFolderName="DisplayTemplates">
+                <ProjectItem ReplaceParameters="true" TargetFileName="ApiGroup.cshtml">ApiGroup.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="CollectionModelDescription.cshtml">CollectionModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="ComplexTypeModelDescription.cshtml">ComplexTypeModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="DictionaryModelDescription.cshtml">DictionaryModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="EnumTypeModelDescription.cshtml">EnumTypeModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="HelpPageApiModel.cshtml">HelpPageApiModel.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="ImageSample.cshtml">ImageSample.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="InvalidSample.cshtml">InvalidSample.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="KeyValuePairModelDescription.cshtml">KeyValuePairModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="ModelDescriptionLink.cshtml">ModelDescriptionLink.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="Parameters.cshtml">Parameters.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="Samples.cshtml">Samples.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="SimpleTypeModelDescription.cshtml">SimpleTypeModelDescription.cshtml</ProjectItem>
+                <ProjectItem ReplaceParameters="true" TargetFileName="TextSample.cshtml">TextSample.cshtml</ProjectItem>
+              </Folder>
+              <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml">Index.cshtml</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ResourceModel.cshtml">ResourceModel.cshtml</ProjectItem>
+            </Folder>
+            <Folder Name="Shared" TargetFolderName="Shared">
+              <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.cshtml">_Layout.cshtml</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="XmlDocumentationProvider.cs">XmlDocumentationProvider.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Constants" TargetFolderName="Constants">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ErrorMessages.cs">ErrorMessages.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationController.cs">ConfigurationController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LegalController.cs">LegalController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoggingController.cs">LoggingController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipateController.cs">ParticipateController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PingController.cs">PingController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SurveyController.cs">SurveyController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Extensions" TargetFolderName="Extensions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CsvExtension.cs">CsvExtension.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CsvHelper.cs">CsvHelper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CsvMediaTypeFormatter.cs">CsvMediaTypeFormatter.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PropertyInfoWrapper.cs">PropertyInfoWrapper.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+      <Folder Name="Filters" TargetFolderName="Filters">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BasicAuthenticationAttribute.cs">BasicAuthenticationAttribute.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SchedulerAuthorizationFilter.cs">SchedulerAuthorizationFilter.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>
+      <Folder Name="Mapping" TargetFolderName="Mapping">
+        <Folder Name="Helper" TargetFolderName="Helper">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ExtractMapper.cs">ExtractMapper.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ViewMapperProfile.cs">ViewMapperProfile.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiResponse.cs">ApiResponse.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ExtractModel.cs">ExtractModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationViewModel.cs">ParticipationViewModel.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+      <Folder Name="Validation" TargetFolderName="Validation">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CaptchaAttribute.cs">CaptchaAttribute.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NotUsedEmailAttribute.cs">NotUsedEmailAttribute.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TrueAttribute.cs">TrueAttribute.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Production.config">Web.Production.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Staging.config">Web.Staging.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

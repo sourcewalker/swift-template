@@ -1,0 +1,55 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Infrastructure.InstantWin</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Infrastructure.InstantWin</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Infrastructure.InstantWin.csproj" File="Infrastructure.InstantWin.csproj" ReplaceParameters="true">
+      <Folder Name="Allocator" TargetFolderName="Allocator">
+        <Folder Name="Algorithms" TargetFolderName="Algorithms">
+          <ProjectItem ReplaceParameters="true" TargetFileName="BlindAlgorithm.cs">BlindAlgorithm.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="FairAlgorithm.cs">FairAlgorithm.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="WeightedAlgorithm.cs">WeightedAlgorithm.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Factory" TargetFolderName="Factory">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AllocatorFactory.cs">AllocatorFactory.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProviderConfiguration.cs">ProviderConfiguration.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Enums" TargetFolderName="Enums">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AllocatorAlgorithms.cs">AllocatorAlgorithms.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GeneratorAlgorithms.cs">GeneratorAlgorithms.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Generator" TargetFolderName="Generator">
+        <Folder Name="Algorithms" TargetFolderName="Algorithms">
+          <ProjectItem ReplaceParameters="true" TargetFileName="DivideAndConquerAlgorithm.cs">DivideAndConquerAlgorithm.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Factory" TargetFolderName="Factory">
+          <ProjectItem ReplaceParameters="true" TargetFileName="GeneratorFactory.cs">GeneratorFactory.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IAllocator.cs">IAllocator.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IGenerator.cs">IGenerator.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Provider" TargetFolderName="Provider">
+        <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinProvider.cs">InstantWinProvider.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

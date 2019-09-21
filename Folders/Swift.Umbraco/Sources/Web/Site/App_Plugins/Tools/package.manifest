@@ -1,0 +1,13 @@
+﻿{
+  "javascript": [
+    "~/App_Plugins/Tools/InstantWin/Generator/generators.controller.js",
+    "~/App_Plugins/Tools/InstantWin/Generator/generators.resource.js",
+    "~/App_Plugins/Tools/InstantWin/Prizes/prizes.controller.js",
+    "~/App_Plugins/Tools/InstantWin/Prizes/prizes.resource.js",
+    "~/App_Plugins/Tools/InstantWin/Slots/slots.controller.js",
+    "~/App_Plugins/Tools/InstantWin/Slots/slots.resource.js",
+    "~/App_Plugins/Tools/InstantWin/Filters/instantwin.filter.js"
+  ],
+  "css": [
+  ]
+}

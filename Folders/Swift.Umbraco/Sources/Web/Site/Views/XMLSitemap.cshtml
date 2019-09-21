@@ -1,0 +1,50 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = null;
+	umbraco.library.ChangeContentType("text/xml");
+}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	@{
+		var currentHomepage = Umbraco.TypedContentAtXPath("//homepage")
+									 .First(h => h.GetCulture().Name == UICulture);
+	}
+	<url>
+		<loc>@currentHomepage.UrlWithDomain()</loc>
+		<lastmod>@currentHomepage.UpdateDate.ToString("yyyy-MM-ddTHH:mm:00")+00:00</lastmod>
+		@if (currentHomepage.HasValue("changeFrequency"))
+		{
+			<changefreq>@currentHomepage.GetPropertyValue("changeFrequency")</changefreq>
+		}
+	</url>
+
+	@foreach (var content in currentHomepage.Children())
+	{
+		if (content.HasProperty("noIndex") && content.GetPropertyValue<string>("noIndex", "True") == "False")
+		{
+			<url>
+				<loc>@string.Concat(currentHomepage.UrlWithDomain(), content.UrlName)</loc>
+				<lastmod>@content.UpdateDate.ToString("yyyy-MM-ddTHH:mm:00")+00:00</lastmod>
+				@if (content.HasValue("changeFrequency"))
+				{
+					<changefreq>@content.GetPropertyValue("changeFrequency")</changefreq>
+				}
+			</url>
+		}
+		else
+		{
+			foreach (var childContent in content.Children()
+												.Where(cc => cc.HasProperty("noIndex") &&
+															 cc.GetPropertyValue<string>("noIndex", "True") == "False"))
+			{
+				<url>
+					<loc>@string.Concat(currentHomepage.UrlWithDomain(), childContent.UrlName)</loc>
+					<lastmod>@childContent.UpdateDate.ToString("yyyy-MM-ddTHH:mm:00")+00:00</lastmod>
+					@if (childContent.HasValue("changeFrequency"))
+					{
+						<changefreq>@childContent.GetPropertyValue("changeFrequency")</changefreq>
+					}
+				</url>
+			}
+		}
+	}
+</urlset>

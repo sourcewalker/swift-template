@@ -1,0 +1,60 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Infrastructure.Community</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Infrastructure.Community</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Infrastructure.Community.csproj" File="Infrastructure.Community.csproj" ReplaceParameters="true">
+      <Folder Name="Helper" TargetFolderName="Helper">
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityLoginHelper.cs">KuhmunityLoginHelper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityProfileHelper.cs">KuhmunityProfileHelper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityRegistrationHelper.cs">KuhmunityRegistrationHelper.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ILoginProvider.cs">ILoginProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IProfileProvider.cs">IProfileProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IRegistrationProvider.cs">IRegistrationProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IValidateProvider.cs">IValidateProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Libraries" TargetFolderName="Libraries">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Kuhmunity.DTO.dll">Kuhmunity.DTO.dll</ProjectItem>
+      </Folder>
+      <Folder Name="Login" TargetFolderName="Login">
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityLoginModule.cs">KuhmunityLoginModule.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityLogoutModule.cs">KuhmunityLogoutModule.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityBase.cs">KuhmunityBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityCookie.cs">KuhmunityCookie.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityResponse.cs">KuhmunityResponse.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Profile" TargetFolderName="Profile">
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityProfileModule.cs">KuhmunityProfileModule.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Registration" TargetFolderName="Registration">
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityRegistrationModule.cs">KuhmunityRegistrationModule.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Status" TargetFolderName="Status">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ResponseMessages.cs">ResponseMessages.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ResponseStatus.cs">ResponseStatus.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Validation" TargetFolderName="Validation">
+        <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityInputValidationModule.cs">KuhmunityInputValidationModule.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="KuhmunityProvider.cs">KuhmunityProvider.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,60 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Web.Service.GraphQL</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Web.Service.GraphQL</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Web.Service.GraphQL.csproj" File="Web.Service.GraphQL.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <Folder Name="PublishProfiles" TargetFolderName="PublishProfiles">
+          <ProjectItem ReplaceParameters="false" TargetFileName="FolderProfile.pubxml">FolderProfile.pubxml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="PingController.cs">PingController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Query" TargetFolderName="Query">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppMutation.cs">AppMutation.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppQuery.cs">AppQuery.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Schema" TargetFolderName="Schema">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppSchema.cs">AppSchema.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Types" TargetFolderName="Types">
+        <Folder Name="Input" TargetFolderName="Input">
+          <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransactionInputType.cs">FailedTransactionInputType.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ParticipantInputType.cs">ParticipantInputType.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationInputType.cs">ParticipationInputType.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SiteInputType.cs">SiteInputType.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Output" TargetFolderName="Output">
+          <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransactionType.cs">FailedTransactionType.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ParticipantType.cs">ParticipantType.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationType.cs">ParticipationType.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SiteType.cs">SiteType.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="favicon.png">favicon.png</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,108 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Web.Site</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Web.Site</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Web.Site.csproj" File="Web.Site.csproj" ReplaceParameters="true">
+      <Folder Name="App_Start" TargetFolderName="App_Start">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BundleConfig.cs">BundleConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FilterConfig.cs">FilterConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InjectionConfig.cs">InjectionConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MappingConfig.cs">MappingConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RouteConfig.cs">RouteConfig.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Constants" TargetFolderName="Constants">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Phase.cs">Phase.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseController.cs">BaseController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ExceptionController.cs">ExceptionController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeController.cs">HomeController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NavigationController.cs">NavigationController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StaticController.cs">StaticController.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Error.htm">Error.htm</ProjectItem>
+      <Folder Name="Extensions" TargetFolderName="Extensions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="RouteDataExtension.cs">RouteDataExtension.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RouteType.cs">RouteType.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax">Global.asax</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Global.asax.cs">Global.asax.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Proximity.snk">Proximity.snk</ProjectItem>
+      <Folder Name="Services" TargetFolderName="Services">
+        <Folder Name="Helpers" TargetFolderName="Helpers">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ApiService.cs">ApiService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Interfaces" TargetFolderName="Interfaces">
+          <ProjectItem ReplaceParameters="true" TargetFileName="IApiService.cs">IApiService.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Models" TargetFolderName="Models">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ApiResponse.cs">ApiResponse.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="DataModel.cs">DataModel.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LegalText.cs">LegalText.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DataLayerModel.cs">DataLayerModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FooterViewModel.cs">FooterViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HeaderViewModel.cs">HeaderViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LegalViewModel.cs">LegalViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SiteViewModel.cs">SiteViewModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+        <Folder Name="Exception" TargetFolderName="Exception">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Error404.cshtml">Error404.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Error500.cshtml">Error500.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Home" TargetFolderName="Home">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Holding.cshtml">Holding.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml">Index.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Shared" TargetFolderName="Shared">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.cshtml">_Layout.cshtml</ProjectItem>
+          <Folder Name="Components" TargetFolderName="Components">
+            <ProjectItem ReplaceParameters="true" TargetFileName="_Cookie.cshtml">_Cookie.cshtml</ProjectItem>
+          </Folder>
+          <Folder Name="Navigation" TargetFolderName="Navigation">
+            <ProjectItem ReplaceParameters="true" TargetFileName="_BodyScriptTop.cshtml">_BodyScriptTop.cshtml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="_Footer.cshtml">_Footer.cshtml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="_FootScript.cshtml">_FootScript.cshtml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="_Header.cshtml">_Header.cshtml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="_HeadScript.cshtml">_HeadScript.cshtml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="_HeadStyle.cshtml">_HeadStyle.cshtml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="_Meta.cshtml">_Meta.cshtml</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Static" TargetFolderName="Static">
+          <ProjectItem ReplaceParameters="true" TargetFileName="FAQ.cshtml">FAQ.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Terms.cshtml">Terms.cshtml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Debug.config">Web.Debug.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Production.config">Web.Production.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Release.config">Web.Release.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.Staging.config">Web.Staging.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

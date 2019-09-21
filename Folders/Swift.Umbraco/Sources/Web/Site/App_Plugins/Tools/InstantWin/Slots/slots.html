@@ -1,0 +1,26 @@
+﻿<h3>Competition Instant Win Slots</h3>
+<h4>Please find below the list of all Instant Win Slots</h4>
+<hr />
+<div class="umb-editor umb-mediapicker span12"
+     ng-controller="slot.controller"
+     ng-init="init()">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Moment Id</th>
+                <th>Activation Date</th>
+                <th>Status</th>
+                <th>Creation Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="slot in slots">
+                <td>{{slot.Id}}</td>
+                <td>{{slot.ActivationDate | date:"medium"}}</td>
+                <td>{{slot.IsWon | wonfilter}}</td>
+                <td>{{slot.CreatedOn | date:"medium"}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+

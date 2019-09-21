@@ -1,0 +1,43 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Web.Configuration</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Web.Configuration</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Web.Configuration.csproj" File="Web.Configuration.csproj" ReplaceParameters="true">
+      <Folder Name="Models" TargetFolderName="Models">
+        <Folder Name="Collections" TargetFolderName="Collections">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AddCollection.cs">AddCollection.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="EnvironmentCollection.cs">EnvironmentCollection.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SiteCollection.cs">SiteCollection.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Elements" TargetFolderName="Elements">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AddElement.cs">AddElement.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="EnvironmentElement.cs">EnvironmentElement.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SiteElement.cs">SiteElement.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Sections" TargetFolderName="Sections">
+          <ProjectItem ReplaceParameters="true" TargetFileName="EnvironmentContextSection.cs">EnvironmentContextSection.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="XML" TargetFolderName="XML">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationProvider.cs">ConfigurationProvider.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

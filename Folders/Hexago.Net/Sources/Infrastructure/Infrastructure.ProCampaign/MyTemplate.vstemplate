@@ -1,0 +1,86 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Infrastructure.ProCampaign</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Infrastructure.ProCampaign</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Infrastructure.ProCampaign.csproj" File="Infrastructure.ProCampaign.csproj" ReplaceParameters="true">
+      <Folder Name="Constants" TargetFolderName="Constants">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProCampaignConstants.cs">ProCampaignConstants.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Consumer" TargetFolderName="Consumer">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConsumerProvider.cs">ConsumerProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Ecommerce" TargetFolderName="Ecommerce">
+        <Folder Name="Authentication" TargetFolderName="Authentication">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AuthenticationHelper.cs">AuthenticationHelper.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="AuthenticationProvider.cs">AuthenticationProvider.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="EcommerceAuthForm.cs">EcommerceAuthForm.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="EcommerceAuthResponse.cs">EcommerceAuthResponse.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Entities" TargetFolderName="Entities">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Address.cs">Address.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Availability.cs">Availability.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="BearerToken.cs">BearerToken.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Classification.cs">Classification.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ClassificationAccessibilityType.cs">ClassificationAccessibilityType.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Consumer.cs">Consumer.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CustomAttribute.cs">CustomAttribute.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="DeliveryDetails.cs">DeliveryDetails.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="DeliveryInfoType.cs">DeliveryInfoType.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="OrderItem.cs">OrderItem.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="OrderStatus.cs">OrderStatus.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="OrderStatusType.cs">OrderStatusType.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Payment.cs">Payment.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PaymentStatus.cs">PaymentStatus.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Price.cs">Price.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Product.cs">Product.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ProductLink.cs">ProductLink.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Shop.cs">Shop.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Source.cs">Source.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Mapping" TargetFolderName="Mapping">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Converter.cs">Converter.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="Serialize.cs">Serialize.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Order" TargetFolderName="Order">
+          <ProjectItem ReplaceParameters="true" TargetFileName="EcommerceOrderRequest.cs">EcommerceOrderRequest.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Product" TargetFolderName="Product">
+          <ProjectItem ReplaceParameters="true" TargetFileName="EcommerceProductRequest.cs">EcommerceProductRequest.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Response" TargetFolderName="Response">
+          <ProjectItem ReplaceParameters="true" TargetFileName="EcommerceApiResponse.cs">EcommerceApiResponse.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="EcommerceBatchSyncResponse.cs">EcommerceBatchSyncResponse.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SyncStatus.cs">SyncStatus.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Helper" TargetFolderName="Helper">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiHelper.cs">ApiHelper.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProCampaignData.cs">ProCampaignData.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProCampaignResponse.cs">ProCampaignResponse.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProCampaignSettings.cs">ProCampaignSettings.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Permission" TargetFolderName="Permission">
+        <ProjectItem ReplaceParameters="true" TargetFileName="PermissionProvider.cs">PermissionProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

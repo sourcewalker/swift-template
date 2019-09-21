@@ -1,0 +1,205 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Admin.Dashboard</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>Web</ProjectType>
+    <ProjectSubType>CSharp</ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Admin.Dashboard</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ProjectName.webproj" File="ProjectName.webproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName=".angulardoc.json">.angulardoc.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName=".editorconfig">.editorconfig</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName=".gitignore">.gitignore</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="angular.json">angular.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="bash.exe.stackdump">bash.exe.stackdump</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="CHANGELOG.md">CHANGELOG.md</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="CONTRIBUTING.md">CONTRIBUTING.md</ProjectItem>
+      <Folder Name="e2e" TargetFolderName="e2e">
+        <ProjectItem ReplaceParameters="true" TargetFileName="app.e2e-spec.ts">app.e2e-spec.ts</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="app.po.ts">app.po.ts</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.e2e.json">tsconfig.e2e.json</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ISSUE_TEMPLATE.md">ISSUE_TEMPLATE.md</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="karma.conf.js">karma.conf.js</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="LICENSE">LICENSE</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="package.json">package.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="protractor.conf.js">protractor.conf.js</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="README.md">README.md</ProjectItem>
+      <Folder Name="src" TargetFolderName="src">
+        <Folder Name="app" TargetFolderName="app">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_nav.ts">_nav.ts</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.component.css">app.component.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.component.html">app.component.html</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.component.spec.ts">app.component.spec.ts</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.component.ts">app.component.ts</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.module.ts">app.module.ts</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="app.routing.ts">app.routing.ts</ProjectItem>
+          <Folder Name="containers" TargetFolderName="containers">
+            <Folder Name="default-layout" TargetFolderName="default-layout">
+              <ProjectItem ReplaceParameters="true" TargetFileName="default-layout.component.html">default-layout.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="default-layout.component.ts">default-layout.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="index.ts">index.ts</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="index.ts">index.ts</ProjectItem>
+          </Folder>
+          <Folder Name="views" TargetFolderName="views">
+            <Folder Name="base" TargetFolderName="base">
+              <ProjectItem ReplaceParameters="true" TargetFileName="base-routing.module.ts">base-routing.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="base.module.ts">base.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="cards.component.html">cards.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="cards.component.ts">cards.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="carousels.component.html">carousels.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="carousels.component.ts">carousels.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="collapses.component.html">collapses.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="collapses.component.ts">collapses.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="forms.component.html">forms.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="forms.component.ts">forms.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="paginations.component.html">paginations.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="paginations.component.ts">paginations.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="popovers.component.html">popovers.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="popovers.component.ts">popovers.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="progress.component.html">progress.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="progress.component.ts">progress.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="switches.component.html">switches.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="switches.component.ts">switches.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="tables.component.html">tables.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="tables.component.ts">tables.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="tabs.component.html">tabs.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="tabs.component.ts">tabs.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="tooltips.component.html">tooltips.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="tooltips.component.ts">tooltips.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="buttons" TargetFolderName="buttons">
+              <ProjectItem ReplaceParameters="true" TargetFileName="brand-buttons.component.html">brand-buttons.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="brand-buttons.component.ts">brand-buttons.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="buttons-routing.module.ts">buttons-routing.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="buttons.component.html">buttons.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="buttons.component.ts">buttons.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="buttons.module.ts">buttons.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="dropdowns.component.css">dropdowns.component.css</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="dropdowns.component.html">dropdowns.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="dropdowns.component.ts">dropdowns.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="chartjs" TargetFolderName="chartjs">
+              <ProjectItem ReplaceParameters="true" TargetFileName="chartjs-routing.module.ts">chartjs-routing.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="chartjs.component.html">chartjs.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="chartjs.component.ts">chartjs.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="chartjs.module.ts">chartjs.module.ts</ProjectItem>
+            </Folder>
+            <Folder Name="dashboard" TargetFolderName="dashboard">
+              <ProjectItem ReplaceParameters="true" TargetFileName="dashboard-routing.module.ts">dashboard-routing.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="dashboard.component.html">dashboard.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="dashboard.component.ts">dashboard.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="dashboard.module.ts">dashboard.module.ts</ProjectItem>
+            </Folder>
+            <Folder Name="error" TargetFolderName="error">
+              <ProjectItem ReplaceParameters="true" TargetFileName="404.component.html">404.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="404.component.ts">404.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="500.component.html">500.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="500.component.ts">500.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="icons" TargetFolderName="icons">
+              <ProjectItem ReplaceParameters="true" TargetFileName="coreui-icons.component.html">coreui-icons.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="coreui-icons.component.ts">coreui-icons.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="flags.component.html">flags.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="flags.component.ts">flags.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="font-awesome.component.html">font-awesome.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="font-awesome.component.ts">font-awesome.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="icons-routing.module.ts">icons-routing.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="icons.module.ts">icons.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="simple-line-icons.component.html">simple-line-icons.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="simple-line-icons.component.ts">simple-line-icons.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="login" TargetFolderName="login">
+              <ProjectItem ReplaceParameters="true" TargetFileName="login.component.html">login.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="login.component.ts">login.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="notifications" TargetFolderName="notifications">
+              <ProjectItem ReplaceParameters="true" TargetFileName="alerts.component.html">alerts.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="alerts.component.ts">alerts.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="badges.component.html">badges.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="badges.component.ts">badges.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="modals.component.html">modals.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="modals.component.ts">modals.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="notifications-routing.module.ts">notifications-routing.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="notifications.module.ts">notifications.module.ts</ProjectItem>
+            </Folder>
+            <Folder Name="register" TargetFolderName="register">
+              <ProjectItem ReplaceParameters="true" TargetFileName="register.component.html">register.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="register.component.ts">register.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="theme" TargetFolderName="theme">
+              <ProjectItem ReplaceParameters="true" TargetFileName="colors.component.html">colors.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="colors.component.ts">colors.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="theme-routing.module.ts">theme-routing.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="theme.module.ts">theme.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="typography.component.html">typography.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="typography.component.ts">typography.component.ts</ProjectItem>
+            </Folder>
+            <Folder Name="widgets" TargetFolderName="widgets">
+              <ProjectItem ReplaceParameters="true" TargetFileName="widgets-routing.module.ts">widgets-routing.module.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="widgets.component.html">widgets.component.html</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="widgets.component.ts">widgets.component.ts</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="widgets.module.ts">widgets.module.ts</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <Folder Name="assets" TargetFolderName="assets">
+          <ProjectItem ReplaceParameters="false" TargetFileName=".gitkeep">.gitkeep</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+          <Folder Name="img" TargetFolderName="img">
+            <Folder Name="avatars" TargetFolderName="avatars">
+              <ProjectItem ReplaceParameters="false" TargetFileName="1.jpg">1.jpg</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="2.jpg">2.jpg</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="3.jpg">3.jpg</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="4.jpg">4.jpg</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="5.jpg">5.jpg</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="6.jpg">6.jpg</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="7.jpg">7.jpg</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="8.jpg">8.jpg</ProjectItem>
+            </Folder>
+            <Folder Name="brand" TargetFolderName="brand">
+              <ProjectItem ReplaceParameters="false" TargetFileName="logo.png">logo.png</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="proximity.png">proximity.png</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="proximity_animated.gif">proximity_animated.gif</ProjectItem>
+              <ProjectItem ReplaceParameters="false" TargetFileName="proximity_black.png">proximity_black.png</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <Folder Name="environments" TargetFolderName="environments">
+          <ProjectItem ReplaceParameters="true" TargetFileName="environment.prod.ts">environment.prod.ts</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="environment.ts">environment.ts</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="index.html">index.html</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="main.ts">main.ts</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="polyfills.ts">polyfills.ts</ProjectItem>
+        <Folder Name="scss" TargetFolderName="scss">
+          <ProjectItem ReplaceParameters="false" TargetFileName="_custom.scss">_custom.scss</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="_variables.scss">_variables.scss</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="style.scss">style.scss</ProjectItem>
+          <Folder Name="vendors" TargetFolderName="vendors">
+            <ProjectItem ReplaceParameters="false" TargetFileName="_variables.scss">_variables.scss</ProjectItem>
+            <Folder Name="chart.js" TargetFolderName="chart.js">
+              <ProjectItem ReplaceParameters="false" TargetFileName="chart.scss">chart.scss</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="test.ts">test.ts</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.app.json">tsconfig.app.json</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.spec.json">tsconfig.spec.json</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="typings.d.ts">typings.d.ts</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tsconfig.json">tsconfig.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="tslint.json">tslint.json</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

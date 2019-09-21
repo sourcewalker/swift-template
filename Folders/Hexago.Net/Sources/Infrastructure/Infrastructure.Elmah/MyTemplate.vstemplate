@@ -1,0 +1,42 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Infrastructure.Elmah</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Infrastructure.Elmah</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Infrastructure.Elmah.csproj" File="Infrastructure.Elmah.csproj" ReplaceParameters="true">
+      <Folder Name="AdminPage" TargetFolderName="AdminPage">
+        <ProjectItem ReplaceParameters="true" TargetFileName="LogPageFactory.cs">LogPageFactory.cs</ProjectItem>
+      </Folder>
+      <Folder Name="App_Readme" TargetFolderName="App_Readme">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Elmah.txt">Elmah.txt</ProjectItem>
+      </Folder>
+      <Folder Name="Constant" TargetFolderName="Constant">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Configuration.cs">Configuration.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ElmahProvider.cs">ElmahProvider.cs</ProjectItem>
+      <Folder Name="Exceptions" TargetFolderName="Exceptions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ErrorException.cs">ErrorException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InfoException.cs">InfoException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TraceException.cs">TraceException.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WarnException.cs">WarnException.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

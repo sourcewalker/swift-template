@@ -1,0 +1,42 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Core.Service</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Core.Service</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Core.Service.csproj" File="Core.Service.csproj" ReplaceParameters="true">
+      <Folder Name="Domain" TargetFolderName="Domain">
+        <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransactionService.cs">FailedTransactionService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipantService.cs">ParticipantService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationService.cs">ParticipationService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SiteService.cs">SiteService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Flow" TargetFolderName="Flow">
+        <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinService.cs">InstantWinService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="JourneyService.cs">JourneyService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LegalService.cs">LegalService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SurveyService.cs">SurveyService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValidationService.cs">ValidationService.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Status" TargetFolderName="Status">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationStatus.cs">ParticipationStatus.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

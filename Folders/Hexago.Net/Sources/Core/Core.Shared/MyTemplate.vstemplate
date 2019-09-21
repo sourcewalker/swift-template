@@ -1,0 +1,41 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Core.Shared</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Core.Shared</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Core.Shared.csproj" File="Core.Shared.csproj" ReplaceParameters="true">
+      <Folder Name="DTO" TargetFolderName="DTO">
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseDto.cs">BaseDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransactionDto.cs">FailedTransactionDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipantDto.cs">ParticipantDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationDto.cs">ParticipationDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SiteDto.cs">SiteDto.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Configurations.cs">Configurations.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Environments.cs">Environments.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Utility" TargetFolderName="Utility">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CheckSum.cs">CheckSum.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StringUtility.cs">StringUtility.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,66 @@
+<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+    <TemplateData>
+        <Name>Swift Umbraco by PBIO</Name>
+        <Description>A .Net Framework web project template based on Umbraco by Proximity Indian Ocean. Involving ASP.NET MVC, Web API, Umbraco CMS, Angular.js, Petapoco, Hangfire, AutoMapper...</Description>
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>1000</SortOrder>
+        <CreateNewFolder>true</CreateNewFolder>
+        <DefaultName>Swift.Umbraco</DefaultName>
+        <ProvideDefaultName>true</ProvideDefaultName>
+        <LocationField>Enabled</LocationField>
+        <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+        <Icon>__TemplateIcon.png</Icon>
+        <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    </TemplateData>
+    <TemplateContent>
+        <ProjectCollection>
+            <SolutionFolder Name="Source">
+                <SolutionFolder Name="Core">
+                    <ProjectTemplateLink ProjectName="Business">
+                        Sources\Core\Business\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Models">
+                        Sources\Core\Models\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+                <SolutionFolder Name="Infrastructure">
+                    <ProjectTemplateLink ProjectName="DAL">
+                        Sources\Infrastructure\DAL\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Features">
+                        Sources\Infrastructure\Features\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+                <SolutionFolder Name="Web">
+                    <ProjectTemplateLink ProjectName="Site">
+                        Sources\Web\Site\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+            </SolutionFolder>
+            <SolutionFolder Name="Test">
+                <SolutionFolder Name="Functional">
+                </SolutionFolder>
+                <SolutionFolder Name="Integration">
+                </SolutionFolder>
+                <SolutionFolder Name="Unit">
+                    <ProjectTemplateLink ProjectName="Business.Tests">
+                        Tests\Unit\Business.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="DAL.Tests">
+                        Tests\Unit\DAL.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Features.Tests">
+                        Tests\Unit\Features.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Models.Tests">
+                        Tests\Unit\Models.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                    <ProjectTemplateLink ProjectName="Site.Tests">
+                        Tests\Unit\Site.Tests\MyTemplate.vstemplate
+                    </ProjectTemplateLink>
+                </SolutionFolder>
+            </SolutionFolder>
+        </ProjectCollection>
+    </TemplateContent>
+</VSTemplate>

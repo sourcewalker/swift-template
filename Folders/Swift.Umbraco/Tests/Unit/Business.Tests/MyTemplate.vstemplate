@@ -1,0 +1,40 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Swift.Umbraco.Tests.Unit.Business.Tests</Name>
+    <Description>Business Unit test project of the solution</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Swift.Umbraco.Tests.Unit.Business.Tests</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Business.Tests.csproj" File="Business.Tests.csproj" ReplaceParameters="true">
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConfigurationServiceTests.cs">ConfigurationServiceTests.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Helper" TargetFolderName="Helper">
+        <ProjectItem ReplaceParameters="true" TargetFileName="PublishedContentExtensionsTests.cs">PublishedContentExtensionsTests.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Journey" TargetFolderName="Journey">
+        <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinServiceTests.cs">InstantWinServiceTests.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationServiceTests.cs">ParticipationServiceTests.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SynchronizationServiceTests.cs">SynchronizationServiceTests.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Validation" TargetFolderName="Validation">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ValidationServiceTests.cs">ValidationServiceTests.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

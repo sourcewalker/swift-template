@@ -1,0 +1,78 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Swift.Umbraco.Sources.Core.Models</Name>
+    <Description>Domain Model project of the solution</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Swift.Umbraco.Sources.Core.Models</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Models.csproj" File="Models.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="app.config">app.config</ProjectItem>
+      <Folder Name="Domain" TargetFolderName="Domain">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Consumer.cs">Consumer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Country.cs">Country.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EntityBase.cs">EntityBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransaction.cs">FailedTransaction.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinMoment.cs">InstantWinMoment.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Participant.cs">Participant.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Participation.cs">Participation.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Prize.cs">Prize.cs</ProjectItem>
+      </Folder>
+      <Folder Name="DTO" TargetFolderName="DTO">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Allocable.cs">Allocable.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CampaignConfiguration.cs">CampaignConfiguration.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConsumerDto.cs">ConsumerDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CountryDto.cs">CountryDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CrmConfiguration.cs">CrmConfiguration.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CrmDto.cs">CrmDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CrmResponse.cs">CrmResponse.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EmailDto.cs">EmailDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransactionDto.cs">FailedTransactionDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GeneratorConfig.cs">GeneratorConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GeneratorLimitOptions.cs">GeneratorLimitOptions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinMomentDto.cs">InstantWinMomentDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipantDto.cs">ParticipantDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationDto.cs">ParticipationDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PrizeDto.cs">PrizeDto.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SocialMediaConfiguration.cs">SocialMediaConfiguration.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserInfoDto.cs">UserInfoDto.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Enum" TargetFolderName="Enum">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Countries.cs">Countries.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Journey.cs">Journey.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="PaymentType.cs">PaymentType.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Mapping" TargetFolderName="Mapping">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DomainMapperProfile.cs">DomainMapperProfile.cs</ProjectItem>
+        <Folder Name="Helper" TargetFolderName="Helper">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ConsumerMapper.cs">ConsumerMapper.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CountryMapper.cs">CountryMapper.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="FailedTransactionMapper.cs">FailedTransactionMapper.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="InstantWinMomentMapper.cs">InstantWinMomentMapper.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ParticipantMapper.cs">ParticipantMapper.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ParticipationMapper.cs">ParticipationMapper.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="PrizeMapper.cs">PrizeMapper.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Utility" TargetFolderName="Utility">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CheckSum.cs">CheckSum.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DateHelper.cs">DateHelper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="StringHelper.cs">StringHelper.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

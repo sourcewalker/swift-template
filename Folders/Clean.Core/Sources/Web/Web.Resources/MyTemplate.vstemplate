@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Web.Resources</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Web.Resources</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Web.Resources.csproj" File="Web.Resources.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Resource.de-AT.resx">Resource.de-AT.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Resource.de-DE.resx">Resource.de-DE.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Resource.en-GB.resx">Resource.en-GB.resx</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Resource.en-IE.resx">Resource.en-IE.resx</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

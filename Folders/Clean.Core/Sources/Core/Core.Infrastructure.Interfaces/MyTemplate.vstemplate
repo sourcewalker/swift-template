@@ -1,0 +1,72 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Core.Infrastructure.Interfaces</Name>
+    <Description>Core interfaces for infrastructure</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Core.Infrastructure.Interfaces</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Core.Infrastructure.Interfaces.csproj" File="Core.Infrastructure.Interfaces.csproj" ReplaceParameters="true">
+      <Folder Name="Account" TargetFolderName="Account">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IAccountProvider.cs">IAccountProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginInfo.cs">LoginInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginResult.cs">LoginResult.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RegisterInfo.cs">RegisterInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Caching" TargetFolderName="Caching">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICacheProvider.cs">ICacheProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IConfigurationProvider.cs">IConfigurationProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="CRM" TargetFolderName="CRM">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CrmData.cs">CrmData.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="CrmResponse.cs">CrmResponse.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICrmAuthenticationProvider.cs">ICrmAuthenticationProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICrmCommerceProvider.cs">ICrmCommerceProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ICrmConsumerProvider.cs">ICrmConsumerProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="DAL" TargetFolderName="DAL">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IFailedTransactionRepository.cs">IFailedTransactionRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IParticipantRepository.cs">IParticipantRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IParticipationRepository.cs">IParticipationRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IRepository.cs">IRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISiteRepository.cs">ISiteRepository.cs</ProjectItem>
+      </Folder>
+      <Folder Name="InstantWin" TargetFolderName="InstantWin">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Allocable.cs">Allocable.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GeneratorConfig.cs">GeneratorConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GeneratorLimitOptions.cs">GeneratorLimitOptions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IInstantWinMomentProvider.cs">IInstantWinMomentProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Logging" TargetFolderName="Logging">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ILoggingProvider.cs">ILoggingProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Mapping" TargetFolderName="Mapping">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IMappingProvider.cs">IMappingProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Scheduler" TargetFolderName="Scheduler">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CronEnum.cs">CronEnum.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISchedulerProvider.cs">ISchedulerProvider.cs</ProjectItem>
+      </Folder>
+      <Folder Name="UserData" TargetFolderName="UserData">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUserDataProvider.cs">IUserDataProvider.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="User.cs">User.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Validator" TargetFolderName="Validator">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IFormValidatorProvider.cs">IFormValidatorProvider.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,75 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Admin.Dashboard.Razor</Name>
+    <Description>Project site backoffice in razor pages</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Admin.Dashboard.Razor</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Admin.Dashboard.Razor.csproj" File="Admin.Dashboard.Razor.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <Folder Name="PublishProfiles" TargetFolderName="PublishProfiles">
+          <ProjectItem ReplaceParameters="false" TargetFileName="FolderProfile.pubxml">FolderProfile.pubxml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+        <Folder Name="css" TargetFolderName="css">
+          <ProjectItem ReplaceParameters="true" TargetFileName="site.css">site.css</ProjectItem>
+        </Folder>
+        <Folder Name="js" TargetFolderName="js">
+          <ProjectItem ReplaceParameters="true" TargetFileName="site.js">site.js</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="favicon.png">favicon.png</ProjectItem>
+      </Folder>
+      <Folder Name="Client" TargetFolderName="Client">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IServiceClient.cs">IServiceClient.cs</ProjectItem>
+      </Folder>
+      <Folder Name="GraphQL" TargetFolderName="GraphQL">
+        <ProjectItem ReplaceParameters="true" TargetFileName="GraphQlClient.cs">GraphQlClient.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Pages" TargetFolderName="Pages">
+        <Folder Name="Shared" TargetFolderName="Shared">
+          <ProjectItem ReplaceParameters="true" TargetFileName="_CookieConsentPartial.cshtml">_CookieConsentPartial.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="_Layout.cshtml">_Layout.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="_ValidationScriptsPartial.cshtml">_ValidationScriptsPartial.cshtml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">_ViewImports.cshtml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Error.cshtml">Error.cshtml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Error.cshtml.cs">Error.cshtml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml">Index.cshtml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Index.cshtml.cs">Index.cshtml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Privacy.cshtml">Privacy.cshtml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Privacy.cshtml.cs">Privacy.cshtml.cs</ProjectItem>
+      </Folder>
+      <Folder Name="REST" TargetFolderName="REST">
+        <ProjectItem ReplaceParameters="true" TargetFileName="RESTClient.cs">RESTClient.cs</ProjectItem>
+      </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiResponse.cs">ApiResponse.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="BaseViewModel.cs">BaseViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SiteViewModel.cs">SiteViewModel.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="favicon.png">favicon.png</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Web.config">Web.config</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

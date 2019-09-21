@@ -1,0 +1,36 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Web.Service.Tests</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Web.Service.Tests</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+    <PreviewImage>__PreviewImage.PNG</PreviewImage>
+    <Hidden>true</Hidden>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Web.Service.Tests.csproj" File="Web.Service.Tests.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeControllerTest.cs">HomeControllerTest.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="VoteControllerTests.cs">VoteControllerTests.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Validation" TargetFolderName="Validation">
+        <ProjectItem ReplaceParameters="true" TargetFileName="CountryAttributeTests.cs">CountryAttributeTests.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FlavourAttributeTests.cs">FlavourAttributeTests.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RetailerAttributeTests.cs">RetailerAttributeTests.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TrueAttributeTests.cs">TrueAttributeTests.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
