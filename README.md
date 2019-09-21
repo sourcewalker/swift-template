@@ -21,6 +21,18 @@ This project is for maintaining the folder structure of the extension for starti
 
 ### 2.2. Installation
 
+- By installing the .vsix file
+
+1. Download `v1.0\Swift.vsix`
+2. Go to Visual Studio and the "new project" dialog should contains now:
+    - `Clean Core by PBIO`
+    - `Hexago .NET by PBIO`
+    - `Swift Umbraco by PBIO`
+
+    Or
+
+- By Copying files to Template folder
+
 1. Download `v1.0\Clean.Core.zip`, `v1.0\Hexago.Net.zip` and `v1.0\Swift.Umbraco.zip`
 2. Navigate to the folder `%USERPROFILE%\Documents\Visual Studio %version%\Templates\ProjectTemplates\`
 3. Create subfolders in this location named `CleanCore`, `HexagoNet` and `SwiftUmbraco`
