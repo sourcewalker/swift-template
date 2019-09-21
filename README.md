@@ -1,16 +1,15 @@
-# Swift Template for Visual Studio [Folder]
+# Swift Template for Visual Studio
 
-Project scaffolding templates for Mondelez Projects by Proximity BBDO Indian Ocean
+Project scaffolding templates for ASP.NET Core, ASP.NET Framework, Umbraco CMS
 
 ## 1. Author
 
 Nalijaona Irina Andriamifidy  
-Software Engineer at Proximity BBDO Indian Ocean  
-&copy; Copyright Proximity 2019
+@sourcewalker
 
 ## 2. About this project
 
-This project is for maintaining the folder structure of the extension for starting new project for Mondelez Client used by Proximity BBDO Indian Ocean.  
+This project is for maintaining the folder structure of the extension for starting new project.  
 
 ### 2.1. Prerequisites for using the project
 
